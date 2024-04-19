@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .header2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            color: black
+        }
+
+        nav {
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+        }
+        .products {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .categories, .items {
+            flex: 1;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        .categories ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .breadcrumbs {
+            flex-grow: 1;
+            }
+
+        .total-products {
+            margin-left: 20px; /* Adjust spacing between elements */
+        }
+
+        .item {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        .cart-button {
+            background-color: #f0c14b;
+            color: #111;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .btn-secondary {
+            background-color: #b1f2bc; /* Green color */
+            color: black; /* Text color */
+            font-size: 20px;
+            padding: 7px 20px;
+            border-radius: 8px;
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: #ffec99; /* Yellow color */
+            color: black; /* Text color */
+            font-size: 20px;
+            padding: 7px 20px;
+            border-radius: 8px;
+            border: none;
+        }
+
+        .search input[type='text'] {
+            border-radius: 5px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-between;
+            font-size: 16px;
+            padding: 14px 20px; /* Adjust padding to increase width and height */
+            width: 1000px;
+            max-width: 100%; /* Ensure that it doesn't exceed its container */
+        }
+
+        .search input[type='text']:focus {
+            border-color: #3b8147; /* Change the border color on focus */
+        }
+    </style>
+</head>
+<body>
+    <header class = "header2">
+        <h1>Amazon</h1>
+        <nav>
+            <a class="btn btn-primary" href="#">Home</a>
+            <a class="btn btn-primary" href="#">Sales</a>
+            <a class="btn btn-primary" href="#">Products</a>
+        </nav>
+    </header>
+
+    <!-- Search bar -->
+    <div class="search">
+        <form>
+          <input type="text" placeholder="Search" />
+        </form>
+    </div>
+
+    <div class="products">
+        <!-- Categories Section -->
+        <div class="categories">
+            <h2>Products</h2>
+            <ul>
+                <button class="btn btn-secondary">Popular</button>
+                <br></ul>
+                <li><a href="#">Automotive</a></li>
+                <li><a href="#">Clothing & Accessories</a></li>
+                <li><a href="#">Digital</a></li>
+                <li><a href="#">Electronics</a></li>
+                <li><a href="#">Gaming</a></li>
+                <li><a class="active" href="#">Home & Garden</a></li>
+                <li><a href="#">Pets</a></li>
+            </ul>
+        </div>
+        <!-- Items Section -->
+        <div class="items">
+
+            <div class="header2">
+                <div class="breadcrumbs">
+                  Categories&nbsp;&nbsp;>&nbsp;&nbsp;
+                  <a href="#">Home & Garden</a>
+                </div>
+                <div class="total-products">
+                  <span class="total-products-count">32</span> Products
+                </div>
+            </div>
+
+            <div class="item">
+                <h3>Product Name #1</h3>
+                <p>This is a description about the product you see here that you can buy and enjoy. Because it's awesome and you should buy it.</p>
+                <div class="hero">
+                    <img
+                      alt="Product Title Image"
+                      src="https://placehold.co/165x115"
+                    />
+                </div>
+                <br></br>
+                <a class="btn btn-primary" href="#">Add to Cart</a>
+            </div>
+
+            <div class="item">
+                <h3>Product Name #2</h3>
+                <p>This is a description about the product you see here that you can buy and enjoy. Because it's awesome and you should buy it.</p>
+                <div class="hero">
+                    <img
+                      alt="Product Title Image"
+                      src="https://placehold.co/165x115"
+                    />
+                </div>
+                <br></br>
+                <a class="btn btn-primary" href="#">Add to Cart</a>
+            </div>
+
+            <div class="item">
+                <h3>Product Name #3</h3>
+                <p>This is a description about the product you see here that you can buy and enjoy. Because it's awesome and you should buy it.</p>
+                <div class="hero">
+                    <img
+                      alt="Product Title Image"
+                      src="https://placehold.co/165x115"
+                    />
+                </div>
+                <br></br>
+                <a class="btn btn-primary" href="#">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
